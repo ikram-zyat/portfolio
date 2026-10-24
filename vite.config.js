@@ -7,6 +7,7 @@ import { readAuth } from "./scripts/auth.mjs";
 // Il n'est jamais inclus dans le site publié (npm run build).
 // `npm run admin` ouvre directement l'adresse secrète de l'espace admin.
 export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/portfolio/" : "/",
   plugins: [react(), adminApi()],
   server: {
     open: mode === "admin" ? (readAuth()?.path ?? "/admin.html") : false,
