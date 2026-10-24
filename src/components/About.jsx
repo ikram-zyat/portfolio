@@ -1,13 +1,13 @@
 import Reveal from "./Reveal.jsx";
 import Counter from "./Counter.jsx";
-
+import { asset } from "../utils";
 export default function About({ profile }) {
   return (
     <section className="section" id="about">
       <div className="container about">
         <Reveal className="about__media">
           <div className="photo">
-            <img src={profile.photo} alt={`Portrait de ${profile.name}`} />
+            <img src={asset(profile.photo)} alt={`Portrait de ${profile.name}`} />
           </div>
           <div className="about__badge">
             <Counter to={profile.yearsExperience} suffix="+" />

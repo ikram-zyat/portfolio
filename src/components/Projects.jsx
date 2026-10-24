@@ -46,7 +46,7 @@ export default function Projects({ projects }) {
 
         <div className="projects">
           {shown.map((p) => {
-            const cover = p.images && p.images[0];
+            const cover = p.images && p.images[0] ? asset(p.images[0]) : null;
             const subtitle = p.subtitle || (p.tech && p.tech.length ? p.tech.join(" · ") : p.category);
             return (
               <Reveal as="article" className="project" key={p.id}>

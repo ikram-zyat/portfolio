@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { toneFor } from "../utils.js";
-
+import { toneFor, asset } from "../utils.js";
 // Fenêtre de détail d'un projet : galerie de photos, description, fonctionnalités, technologies.
 export default function ProjectModal({ project, onClose }) {
   if (!project) return null;
@@ -45,7 +44,7 @@ function ModalContent({ project, onClose }) {
         <div className="modal__gallery">
           <div className={`modal__main ${images.length ? "" : toneFor(project)}`}>
             {images.length > 0 ? (
-              <img src={images[index]} alt={`Capture d'écran du projet ${project.title}`} />
+              <img src={asset(images[index])} alt={`Capture d'écran du projet ${project.title}`} />
             ) : (
               <p className="modal__empty">{project.title}</p>
             )}
@@ -81,7 +80,7 @@ function ModalContent({ project, onClose }) {
                   aria-label={`Photo ${n + 1}`}
                   onClick={() => setIndex(n)}
                 >
-                  <img src={src} alt="" />
+                  <img src={asset(src)} alt="" />
                 </button>
               ))}
             </div>

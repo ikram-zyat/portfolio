@@ -8,3 +8,8 @@ export function toneFor(project) {
   for (const ch of project.id || project.title || "") h = (h * 31 + ch.charCodeAt(0)) >>> 0;
   return TONES[h % TONES.length];
 }
+// Ajoute le préfixe du site ("/portfolio/") aux chemins du dossier public
+export function asset(path) {
+  if (!path || /^(https?:|data:)/.test(path)) return path;
+  return import.meta.env.BASE_URL + path.replace(/^\//, "");
+}

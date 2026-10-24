@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Reveal from "./Reveal.jsx";
 import Typed from "./Typed.jsx";
-
+import { asset } from "../utils";
 export default function Hero({ profile }) {
   // Deux moitiés identiques : l'animation défile de 50 % puis recommence sans saut visible
   const words = [...profile.marquee, ...profile.marquee];
@@ -34,7 +34,7 @@ export default function Hero({ profile }) {
           <a href="#portfolio" className="btn">
             Voir mes projets
           </a>
-          <a href={profile.cv} className="btn btn--ghost" download>
+          <a href={asset(profile.cv)} className="btn btn--ghost" download>
             Télécharger mon CV
           </a>
         </Reveal>
