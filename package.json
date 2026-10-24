@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-ikram-zyat",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "admin": "vite --mode admin",
+    "add-project": "node scripts/projects-cli.mjs add",
+    "list-projects": "node scripts/projects-cli.mjs list",
+    "remove-project": "node scripts/projects-cli.mjs remove",
+    "publish": "git add -A && git commit -m \"Mise à jour du portfolio\" && git push",
+    "add-experience": "node scripts/projects-cli.mjs add-experience",
+    "remove-experience": "node scripts/projects-cli.mjs remove-experience"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "5.4.11"
+  }
+}

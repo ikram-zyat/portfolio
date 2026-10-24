@@ -1,0 +1,105 @@
+/* Styles de l'espace admin (s'ajoutent à style.css) */
+.admin { width: min(900px, 100% - 32px); margin: 0 auto; padding: 40px 0 80px; }
+.admin h1 { font-size: 2rem; }
+.admin h2 { font-size: 1.3rem; margin-bottom: 18px; }
+.admin__top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
+.admin__top p, .admin__muted { color: var(--muted); }
+.admin__bar { margin-bottom: 20px; }
+
+.admin__notice { padding: 12px 16px; border-radius: 12px; margin-bottom: 20px; font-size: .95rem; border: 1px solid var(--border); }
+.admin__notice.is-ok { color: var(--accent); border-color: var(--accent); background: rgba(198, 255, 61, .08); }
+.admin__notice.is-error { color: #ff8a8a; border-color: #ff6b6b; background: rgba(255, 107, 107, .08); }
+
+.admin__list { display: grid; gap: 12px; }
+.admin__row {
+  display: grid; grid-template-columns: 84px 1fr auto; gap: 16px; align-items: center;
+  padding: 12px; border-radius: 14px; background: var(--card); border: 1px solid var(--border);
+}
+.admin__thumb { width: 84px; aspect-ratio: 16 / 10; border-radius: 8px; background-size: cover; background-position: top; }
+.admin__info { display: grid; min-width: 0; }
+.admin__info strong { font-family: var(--font-title); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.admin__info span { color: var(--muted); font-size: .85rem; }
+.admin__actions { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.admin__actions button {
+  padding: 8px 12px; border-radius: 999px; border: 1px solid var(--border); font-size: .85rem;
+  transition: border-color .2s, color .2s;
+}
+.admin__actions button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.admin__actions button:disabled { opacity: .35; cursor: default; }
+.admin__actions .is-danger:hover:not(:disabled) { border-color: #ff6b6b; color: #ff6b6b; }
+
+.admin__help { margin-top: 36px; padding: 22px; border-radius: 14px; border: 1px dashed var(--border); }
+.admin__help p { color: var(--muted); margin-bottom: 8px; font-size: .95rem; }
+.admin code { padding: 2px 8px; margin: 0 4px; border-radius: 6px; background: var(--bg-alt); color: var(--accent); font-size: .9em; }
+
+.admin__form { display: grid; gap: 18px; padding: 28px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--border); }
+.admin__form label, .admin__label { display: grid; gap: 8px; font-size: .85rem; color: var(--muted); }
+.admin__form input:not([type="file"]), .admin__form textarea {
+  width: 100%; padding: 12px 14px; border-radius: 12px; background: var(--bg); color: var(--text);
+  border: 1px solid var(--border); font: inherit; transition: border-color .2s, box-shadow .2s;
+}
+.admin__form textarea { resize: vertical; }
+.admin__form input:focus, .admin__form textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(198, 255, 61, .15); }
+.admin__two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.admin__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.admin__photo { position: relative; aspect-ratio: 16 / 10; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+.admin__photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.admin__photo.is-new { border-color: var(--accent); }
+.admin__badge {
+  position: absolute; left: 6px; bottom: 6px; padding: 3px 9px; border-radius: 99px;
+  background: var(--accent); color: var(--accent-ink); font-size: .72rem; font-weight: 600;
+}
+.admin__cover {
+  position: absolute; left: 6px; bottom: 6px; padding: 3px 9px; border-radius: 99px;
+  background: rgba(0, 0, 0, .7); font-size: .72rem; opacity: 0; transition: opacity .2s;
+}
+.admin__photo:hover .admin__cover, .admin__cover:focus-visible { opacity: 1; }
+.admin__x {
+  position: absolute; top: 6px; right: 6px; width: 28px; height: 28px; border-radius: 50%;
+  background: rgba(0, 0, 0, .7); font-size: 1.1rem; line-height: 1;
+}
+.admin__x:hover { background: #ff6b6b; color: #fff; }
+.admin__drop {
+  display: grid; place-content: center; text-align: center; gap: 4px; min-height: 94px; cursor: pointer;
+  border: 2px dashed var(--border); border-radius: 10px; color: var(--text); font-size: .9rem;
+  transition: border-color .2s, color .2s;
+}
+.admin__drop:hover { border-color: var(--accent); color: var(--accent); }
+.admin__drop small { color: var(--muted); }
+
+.admin__buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.admin__buttons .btn[disabled] { opacity: .6; cursor: default; transform: none; box-shadow: none; }
+
+@media (max-width: 640px) {
+  .admin__row { grid-template-columns: 64px 1fr; }
+  .admin__thumb { width: 64px; }
+  .admin__actions { grid-column: 1 / -1; justify-content: flex-start; }
+  .admin__two { grid-template-columns: 1fr; }
+  .admin__top { flex-direction: column; align-items: flex-start; }
+}
+
+/* ---- Connexion, onglets, expériences ---- */
+.admin--narrow { width: min(480px, 100% - 32px); padding-top: 60px; }
+.admin__top-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.admin__tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; border-bottom: 1px solid var(--border); }
+.admin__tabs button {
+  padding: 12px 18px; margin-bottom: -1px; font-size: .95rem; color: var(--muted);
+  border-bottom: 2px solid transparent; transition: color .2s, border-color .2s;
+}
+.admin__tabs button:hover { color: var(--text); }
+.admin__tabs button.is-active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.admin__row--text { grid-template-columns: 1fr auto; }
+.admin__hint { color: var(--muted); font-size: .78rem; }
+.admin__url {
+  padding: 12px 14px; border-radius: 12px; background: var(--bg); border: 1px solid var(--accent);
+  color: var(--accent); font-weight: 600; word-break: break-all;
+}
+.admin__slug { display: flex; align-items: center; gap: 0; border: 1px solid var(--border); border-radius: 12px; background: var(--bg); overflow: hidden; }
+.admin__slug > span { padding: 0 0 0 14px; color: var(--muted); font-size: .85rem; white-space: nowrap; }
+.admin__slug input { border: 0 !important; box-shadow: none !important; background: transparent !important; padding-left: 2px !important; min-width: 0; }
+.admin__slug:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(198, 255, 61, .15); }
+
+@media (max-width: 640px) {
+  .admin__row--text { grid-template-columns: 1fr; }
+}

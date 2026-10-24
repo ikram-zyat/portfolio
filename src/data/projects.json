@@ -1,0 +1,86 @@
+[
+  {
+    "id": "mblifestyle",
+    "title": "MbLifeStyle, boutique e-commerce",
+    "category": "Applications",
+    "subtitle": "React.js · Laravel · MySQL",
+    "meta": "Application · Juill. 2026 — Présent · Développeur web",
+    "description": "Plateforme e-commerce dédiée à la vente de vêtements, conçue de l'interface jusqu'à la base de données.",
+    "features": [
+      "Interface utilisateur en React.js",
+      "API et logique métier avec Laravel",
+      "Base de données MySQL",
+      "Gestion du catalogue de produits et des commandes",
+      "Contact direct entre clients et boutique via WhatsApp pour finaliser les commandes"
+    ],
+    "tech": [
+      "React.js",
+      "Laravel",
+      "MySQL"
+    ],
+    "images": [],
+    "color": "g1"
+  },
+  {
+    "id": "megagym",
+    "title": "Méga Gym, gestion des inscriptions",
+    "category": "Applications",
+    "subtitle": "Application web · Candidats et coachs",
+    "meta": "Application web · Nov. — Déc. 2023 · Développeur informatique",
+    "description": "Application web de gestion des candidats et des coachs pour une salle de sport.",
+    "features": [
+      "Gestion des candidats et des coachs",
+      "Suivi des inscriptions"
+    ],
+    "tech": [],
+    "images": [
+      "/images/projects/megagym/1792499831949-ps3bu.jpg"
+    ],
+    "color": "g2"
+  },
+  {
+    "id": "cactus",
+    "title": "Application avec authentification",
+    "category": "Applications",
+    "subtitle": "Laravel 9 · Gestion des utilisateurs",
+    "meta": "Stage professionnel · Avril 2023 · Cactus Informatique",
+    "description": "Application web développée avec Laravel 9, HTML, CSS et JavaScript.",
+    "features": [
+      "Système d'authentification",
+      "Gestion des utilisateurs"
+    ],
+    "tech": [
+      "Laravel 9",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "images": [
+      "/images/projects/cactus/1792500227164-oz3lq.jpg"
+    ],
+    "color": "g3"
+  },
+  {
+    "id": "alliance",
+    "title": "Alliance Compta Audit, site WordPress",
+    "category": "WordPress",
+    "subtitle": "WordPress · Plugins · JavaScript",
+    "meta": "WordPress · Déc. 2023 — Fév. 2024 et Sept. — Déc. 2025",
+    "description": "Création et évolution du site WordPress qui représente l'entreprise.",
+    "features": [
+      "Intégration HTML et CSS responsive",
+      "Fonctionnalités dynamiques avec JavaScript",
+      "Intégration de plugins WordPress"
+    ],
+    "tech": [
+      "WordPress",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "images": [
+      "/images/projects/alliance/1792500343070-32j0z.jpg"
+    ],
+    "color": "g4"
+  }
+]

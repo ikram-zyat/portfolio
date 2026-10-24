@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mblifestyle-developpeuse-web",
+    "company": "MbLifeStyle",
+    "role": "Développeuse web",
+    "date": "Juill. 2026 — Présent",
+    "text": "Conception et développement d'une plateforme e-commerce dédiée à la vente de vêtements : interface en React.js, API et logique métier avec Laravel, base de données MySQL, gestion du catalogue de produits et des commandes, contact direct avec la boutique via WhatsApp."
+  },
+  {
+    "id": "alliance-compta-audit-developpeuse-informatique",
+    "company": "Alliance Compta Audit",
+    "role": "Développeuse informatique",
+    "date": "Sept. 2025 — Déc. 2025",
+    "text": "Création du site WordPress qui représente l'entreprise, avec JavaScript, CSS, HTML et intégration de plugins WordPress."
+  },
+  {
+    "id": "mega-gym-developpeuse-informatique",
+    "company": "Méga Gym",
+    "role": "Développeuse informatique",
+    "date": "Nov. 2023— Déc. 2023",
+    "text": "Création d'une application web de gestion des candidats et des coachs pour une salle de sport, avec des fonctionnalités de suivi des inscriptions."
+  },
+  {
+    "id": "hobi-mobi-stage-professionnel",
+    "company": "HOBI-MOBI",
+    "role": "Stage professionnel",
+    "date": "Juill. 2023— Août 2023",
+    "text": "Conception et développement du front-end d'un site web, optimisation de la performance et de la réactivité du site."
+  },
+  {
+    "id": "cactus-informatique-stage-professionnel",
+    "company": "Cactus Informatique",
+    "role": "Stage professionnel",
+    "date": "Avril 2023",
+    "text": "Conception et développement d'une application avec Laravel 9, HTML, CSS et JavaScript, avec système d'authentification et gestion des utilisateurs."
+  },
+  {
+    "id": "centre-de-formation-sidi-moumen-stage-de-formation",
+    "company": "Centre de formation Sidi Moumen",
+    "role": "Stage de formation",
+    "date": "Août 2022",
+    "text": "Création d'une application de gestion du temps, installation et configuration de logiciels et de systèmes d'exploitation, réparation ou remplacement de câbles réseau RJ45."
+  }
+]

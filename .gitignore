@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+*.log
+# Accès à l espace admin (e-mail et empreinte du mot de passe) : ne jamais publier
+.admin-auth.json

@@ -1,0 +1,104 @@
+{
+  "name": "Ikram Zyat",
+  "heroLine1": "Développeuse",
+  "heroLine2": "full-stack",
+  "typedWords": [
+    "Laravel",
+    "React.js",
+    "WordPress",
+    "e-commerce"
+  ],
+  "heroText": "Je conçois des sites web, des boutiques en ligne et des applications avec Laravel, React et WordPress, des interfaces au back-end.",
+  "email": "ikram.zyat7@gmail.com",
+  "phone": "+212708169638",
+  "phoneDisplay": "07 08 16 96 38",
+  "location": "Casablanca, Maroc",
+  "cv": "/cv-ikram-zyat.pdf",
+  "photo": "/images/ikram.png",
+  "yearsExperience": 3,
+  "aboutTitle": "Passionnée par la création de solutions numériques",
+  "about": [
+    "Titulaire d'une licence en développement web, je possède des compétences en développement front-end et back-end, en conception d'applications web et en gestion de bases de données. Curieuse, motivée et dynamique, je souhaite mettre mes compétences techniques au service de projets innovants et continuer à développer mon expertise."
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PHP",
+    "Laravel",
+    "React.js",
+    "Tailwind",
+    "Bootstrap",
+    "SQL",
+    "MongoDB",
+    "NoSQL",
+    "Merise",
+    "CMS",
+    "Git",
+    "GitLab",
+    "GitHub",
+    "Jira"
+  ],
+  "marquee": [
+    "Laravel",
+    "React.js",
+    "JavaScript",
+    "PHP",
+    "WordPress",
+    "MySQL",
+    "Tailwind",
+    "Bootstrap"
+  ],
+  "education": [
+    {
+      "title": "Licence Développement Digital",
+      "place": "FSAC, Faculté des sciences Aïn Chock",
+      "date": "2025 — 2026"
+    },
+    {
+      "title": "Diplôme en Développement Digital",
+      "place": "Centre de formation professionnelle multidisciplinaire, Sidi Moumen",
+      "date": "2021 — 2023"
+    },
+    {
+      "title": "Économie et Gestion",
+      "place": "Faculté des sciences juridiques, économiques et sociales, Aïn Sebaâ",
+      "date": "2020 — 2021"
+    },
+    {
+      "title": "Baccalauréat scientifique",
+      "place": "Lycée Khadija Oum Al Mouminin",
+      "date": "2018 — 2019"
+    }
+  ],
+  "services": [
+    {
+      "icon": "◎",
+      "title": "Sites vitrines et e-commerce",
+      "text": "Un site clair et responsive pour présenter vos produits et services, ou vendre en ligne, avec maintenance et mises à jour."
+    },
+    {
+      "icon": "{ }",
+      "title": "Applications web sur mesure",
+      "text": "Interface en React.js ou JavaScript, API et base de données avec Laravel, authentification et gestion des utilisateurs."
+    },
+    {
+      "icon": "✦",
+      "title": "WordPress et CMS",
+      "text": "Création et personnalisation de sites WordPress, intégration de plugins et de fonctionnalités dynamiques."
+    }
+  ],
+  "certifications": [
+    "Certifié en Microsoft Office 365"
+  ],
+  "languages": [
+    "Arabe : courant",
+    "Français : bonne maîtrise",
+    "Anglais : notions intermédiaires"
+  ],
+  "interests": [
+    "Musique et cinéma",
+    "Voyages",
+    "Gaming et jeux de stratégie"
+  ]
+}
