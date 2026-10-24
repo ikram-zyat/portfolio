@@ -1,8 +1,7 @@
 import { useMemo, useState } from "react";
 import Reveal from "./Reveal.jsx";
 import ProjectModal from "./ProjectModal.jsx";
-import { toneFor } from "../utils.js";
-
+import { toneFor, asset } from "../utils.js";
 const ALL = "Tous";
 
 export default function Projects({ projects }) {
