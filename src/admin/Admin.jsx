@@ -289,6 +289,8 @@ const emptyProject = {
   description: "",
   features: "",
   tech: "",
+  liveUrl: "",
+  codeUrl: "",
   images: [],
   newImages: [],
 };
@@ -302,6 +304,8 @@ const projectToForm = (p) => ({
   description: p.description || "",
   features: (p.features || []).join("\n"),
   tech: (p.tech || []).join(", "),
+  liveUrl: p.liveUrl || "",
+  codeUrl: p.codeUrl || "",
   images: p.images || [],
   newImages: [],
 });
@@ -357,6 +361,8 @@ function ProjectsPanel({ setNotice, onError }) {
         description: form.description,
         features: form.features.split("\n"),
         tech: form.tech.split(","),
+        liveUrl: form.liveUrl,
+        codeUrl: form.codeUrl,
         images: form.images,
         newImages: form.newImages,
       };
@@ -492,6 +498,16 @@ function ProjectForm({ form, setForm, categories, busy, onSubmit, onCancel }) {
       <label>
         Technologies (séparées par des virgules)
         <input value={form.tech} onChange={set("tech")} placeholder="React.js, Laravel, MySQL" />
+      </label>
+
+      <label>
+        Lien du site en ligne (facultatif)
+        <input type="url" value={form.liveUrl} onChange={set("liveUrl")} placeholder="https://votre-nom.github.io/projet/" />
+      </label>
+
+      <label>
+        Lien du code sur GitHub (facultatif)
+        <input type="url" value={form.codeUrl} onChange={set("codeUrl")} placeholder="https://github.com/votre-nom/projet" />
       </label>
 
       <div className="admin__photos">

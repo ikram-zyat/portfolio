@@ -11,14 +11,19 @@
       "API et logique métier avec Laravel",
       "Base de données MySQL",
       "Gestion du catalogue de produits et des commandes",
-      "Contact direct entre clients et boutique via WhatsApp pour finaliser les commandes"
+      "Contact direct entre clients et boutique via WhatsApp pour finaliser les commandes",
+      "Le code du backend Laravel est disponible dans un dépôt séparé : https://github.com/ikramzyat7-cmyk/mblifestyle-backend"
     ],
     "tech": [
       "React.js",
       "Laravel",
       "MySQL"
     ],
-    "images": [],
+    "liveUrl": "https://mblifestyle-frontend.vercel.app/",
+    "codeUrl": "https://github.com/ikramzyat7-cmyk/mblifestyle-frontend",
+    "images": [
+      "/images/projects/mblifestyle/1792876499993-78uy8.jpg"
+    ],
     "color": "g1"
   },
   {
@@ -27,12 +32,19 @@
     "category": "Applications",
     "subtitle": "Application web · Candidats et coachs",
     "meta": "Application web · Nov. — Déc. 2023 · Développeur informatique",
-    "description": "Application web de gestion des candidats et des coachs pour une salle de sport.",
+    "description": "Application web de gestion des candidats et des coachs pour une salle de sport, avec un espace administrateur et un espace client.",
     "features": [
       "Gestion des candidats et des coachs",
       "Suivi des inscriptions"
     ],
-    "tech": [],
+    "tech": [
+      "React",
+      "Vite",
+      "GitHub Actions",
+      "GitHub Pages"
+    ],
+    "liveUrl": "https://ikramzyat7-cmyk.github.io/mega-gym/",
+    "codeUrl": "https://github.com/ikramzyat7-cmyk/mega-gym",
     "images": [
       "/images/projects/megagym/1792499831949-ps3bu.jpg"
     ],
@@ -55,6 +67,8 @@
       "CSS",
       "JavaScript"
     ],
+    "liveUrl": "http://localhost:5173/admin123",
+    "codeUrl": "https://github.com/ikramzyat7-cmyk/cactus-informatique",
     "images": [
       "/images/projects/cactus/1792500227164-oz3lq.jpg"
     ],

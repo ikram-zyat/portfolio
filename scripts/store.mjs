@@ -46,6 +46,14 @@ const cleanList = (value) =>
 
 const cleanText = (value) => (value == null ? "" : String(value).trim());
 
+// Lien web : on n'accepte que http(s). Sans préfixe, "https://" est ajouté ; sinon le lien est ignoré.
+const cleanUrl = (value) => {
+  let t = cleanText(value);
+  if (!t) return "";
+  if (!/^[a-z][a-z0-9+.-]*:/i.test(t)) t = "https://" + t;
+  return /^https?:\/\/[^\s]+$/i.test(t) ? t : "";
+};
+
 // Un id ne contient que des lettres minuscules, chiffres et tirets : il sert de nom de dossier.
 const validId = (id) => typeof id === "string" && /^[a-z0-9]+(-[a-z0-9]+)*$/.test(id);
 
@@ -101,7 +109,7 @@ function removeImageFile(url) {
 
 /**
  * Crée ou met à jour un projet.
- * input: { id?, title, category, subtitle, meta, description, features[], tech[],
+ * input: { id?, title, category, subtitle, meta, description, features[], tech[], liveUrl, codeUrl,
  *          images[] (photos déjà enregistrées à garder), newImages[] (photos à ajouter), color? }
  */
 export function upsertProject(input) {
@@ -131,6 +139,8 @@ export function upsertProject(input) {
     description: cleanText(input.description),
     features: cleanList(input.features),
     tech: cleanList(input.tech),
+    liveUrl: cleanUrl(input.liveUrl),
+    codeUrl: cleanUrl(input.codeUrl),
     images,
     color: (existing && existing.color) || input.color || pickTone(id),
   };

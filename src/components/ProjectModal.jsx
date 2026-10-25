@@ -13,6 +13,9 @@ function ModalContent({ project, onClose }) {
   const images = project.images || [];
   const features = project.features || [];
   const tech = project.tech || [];
+  const isUrl = (u) => typeof u === "string" && /^https?:\/\//i.test(u);
+  const live = isUrl(project.liveUrl) ? project.liveUrl : "";
+  const code = isUrl(project.codeUrl) ? project.codeUrl : "";
 
   useEffect(() => {
     const dialog = ref.current;
@@ -91,6 +94,13 @@ function ModalContent({ project, onClose }) {
           {project.meta && <p className="modal__meta">{project.meta}</p>}
           <h3 id="modalTitle">{project.title}</h3>
           {project.description && <p className="modal__desc">{project.description}</p>}
+
+          {(live || code) && (
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", margin: "16px 0" }}>
+              {live && <a className="btn" href={live} target="_blank" rel="noopener noreferrer">Voir le site</a>}
+              {code && <a className="btn btn--ghost" href={code} target="_blank" rel="noopener noreferrer">Code source</a>}
+            </div>
+          )}
 
           {features.length > 0 && (
             <>
