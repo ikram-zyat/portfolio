@@ -1,5 +1,36 @@
 [
   {
+    "id": "hobi-mobi",
+    "title": "Hobi - Mobi",
+    "category": "Sites Web",
+    "subtitle": "React · Vite · Site vitrine",
+    "meta": "Juill.2023 - Août.2023",
+    "description": "Site vitrine pour une boutique de mobilier, sans achat en ligne : les visiteurs découvrent la collection puis demandent un devis par WhatsApp ou par e-mail. Un espace d’administration permet de gérer le catalogue (produits, photos et informations de la boutique).",
+    "features": [
+      "Collection filtrable par catégorie, avec recherche",
+      "Fiche détaillée de chaque produit : photos, matériaux, dimensions et disponibilité",
+      "Demande de devis par WhatsApp ou par e-mail",
+      "Espace d'administration (utilisable en local) pour ajouter, modifier et supprimer les produits et leurs photos",
+      "Affichage adapté au téléphone",
+      "Mise en ligne automatique avec GitHub Actions"
+    ],
+    "tech": [
+      "React",
+      "Vite",
+      "JavaScript",
+      "CSS",
+      "Node.js",
+      "GitHub Actions",
+      "GitHub Pages"
+    ],
+    "liveUrl": "https://ikram-zyat.github.io/atelier-casa/",
+    "codeUrl": "https://github.com/ikram-zyat/atelier-casa",
+    "images": [
+      "/images/projects/hobi-mobi/1792947828900-f7ftw.jpg"
+    ],
+    "color": "g5"
+  },
+  {
     "id": "mblifestyle",
     "title": "MbLifeStyle, boutique e-commerce",
     "category": "Applications",
@@ -20,7 +51,7 @@
       "MySQL"
     ],
     "liveUrl": "https://mblifestyle-frontend.vercel.app/",
-    "codeUrl": "https://github.com/ikramzyat7-cmyk/mblifestyle-frontend",
+    "codeUrl": "https://github.com/ikram-zyat/mblifestyle-frontend",
     "images": [
       "/images/projects/mblifestyle/1792876499993-78uy8.jpg"
     ],
@@ -43,8 +74,8 @@
       "GitHub Actions",
       "GitHub Pages"
     ],
-    "liveUrl": "https://ikramzyat7-cmyk.github.io/mega-gym/",
-    "codeUrl": "https://github.com/ikramzyat7-cmyk/mega-gym",
+    "liveUrl": "https://ikram-zyat.github.io/mega-gym/",
+    "codeUrl": "https://github.com/ikram-zyat/mega-gym",
     "images": [
       "/images/projects/megagym/1792499831949-ps3bu.jpg"
     ],
@@ -67,8 +98,8 @@
       "CSS",
       "JavaScript"
     ],
-    "liveUrl": "http://localhost:5173/admin123",
-    "codeUrl": "https://github.com/ikramzyat7-cmyk/cactus-informatique",
+    "liveUrl": "https://ikram-zyat.github.io/cactus-informatique/",
+    "codeUrl": "https://github.com/ikram-zyat/cactus-informatique",
     "images": [
       "/images/projects/cactus/1792500227164-oz3lq.jpg"
     ],
