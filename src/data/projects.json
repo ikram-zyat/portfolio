@@ -1,5 +1,38 @@
 [
   {
+    "id": "eduplan",
+    "title": "EduPlan",
+    "category": "Applications",
+    "subtitle": "Gestion des emplois du temps des professeurs et des classes",
+    "meta": "Août.2022",
+    "description": "EduPlan est une application web réservée au directeur d'un établissement pour créer et gérer les emplois du temps des professeurs et des classes. Elle permet de planifier les cours du lundi au vendredi, d'éviter les conflits d'horaires et de suivre la présence des professeurs, avec impression du planning en PDF.",
+    "features": [
+      "Espace directeur avec connexion sécurisée",
+      "Emploi du temps du lundi au vendredi (8h à 17h, pause déjeuner)",
+      "Deux vues : planning des professeurs et planning des classes",
+      "Ajout, modification et suppression des professeurs, classes, matières et cours",
+      "Détection des conflits (professeur, classe ou salle déjà pris au même créneau)",
+      "Choix de la semaine par calendrier",
+      "Suivi de la présence des professeurs (présent ou absent)",
+      "Impression et export PDF du planning sur une seule page",
+      "Rapports : charge horaire, remplissage des classes, jours d'absence",
+      "Recherche dans les professeurs, classes et matières"
+    ],
+    "tech": [
+      "React",
+      "Vite",
+      "JavaScript",
+      "CSS",
+      "localStorage"
+    ],
+    "liveUrl": "https://ikram-zyat.github.io/eduplan/",
+    "codeUrl": "https://github.com/ikram-zyat/eduplan",
+    "images": [
+      "/images/projects/eduplan/1792963379448-irez6.jpg"
+    ],
+    "color": "g2"
+  },
+  {
     "id": "hobi-mobi",
     "title": "Hobi - Mobi",
     "category": "Sites Web",
