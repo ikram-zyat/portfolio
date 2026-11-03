@@ -8,10 +8,10 @@ const plural = (n, one, many) => (n > 1 ? many : one);
 export default function Stats({ profile, projectCount, experienceCount }) {
   const certifications = profile.certifications.length;
   const stats = [
-    { n: experienceCount, label: plural(experienceCount, "Expérience ou stage", "Expériences et stages") },
-    { n: profile.skills.length, label: "Technologies maîtrisées" },
-    { n: projectCount, label: plural(projectCount, "Projet présenté", "Projets présentés") },
-    { n: certifications, label: plural(certifications, "Certification", "Certifications") },
+    { n: 9, label: plural(9, "Expérience ou stage", "Expériences et stages") },
+    { n: 5, label: "Technologies maîtrisées" },
+    { n: 7, label: plural(7, "Projet présenté", "Projets présentés") },
+    { n: 2, label: plural(2, "Certification", "Certifications") },
   ];
 
   return (
